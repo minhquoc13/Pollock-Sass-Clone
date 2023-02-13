@@ -1,0 +1,31 @@
+.heading {
+    font-weight: 500;
+    color: $heading-color;
+    &--huge {
+        font-size: 72px;
+        line-height: calc(78/72);
+        letter-spacing: -2px;
+    }
+    &--big {
+        font-size: 64px;
+        line-height: calc(72/64);
+        letter-spacing: -2px;
+    }
+    &--normal {
+        font-size: 48px;
+        line-height: calc(56/48);
+        letter-spacing: -1px;
+    }
+    &--small {
+        font-size: 36px;
+        line-height: calc(46/36);
+        letter-spacing: -1px;
+    }
+}
+.text {
+    font-family: $text-font;
+    font-weight: 400;
+    color: $primary-text-color;
+    letter-spacing: -0.3px;
+    font-size: 16px;
+}

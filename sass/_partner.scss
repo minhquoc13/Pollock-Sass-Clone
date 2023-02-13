@@ -1,0 +1,14 @@
+.partner {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    &-heading {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    &-list {
+        display: flex;
+        align-items: center;
+        gap: 0 105px;
+        justify-content: center;
+    }
+}

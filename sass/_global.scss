@@ -1,0 +1,30 @@
+body {
+    font-family: $font;
+    font-size: 16px;
+    color: $primary-text-color;
+    line-height: 1;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.button {
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    background-color: $primary-color;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: -0.3px;
+}
