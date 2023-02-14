@@ -25,6 +25,11 @@ li {
 }
 
 .button {
+  width: fit-content;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   font-size: 15px;
   color: white;
@@ -75,7 +80,7 @@ body {
 .heading--normal {
   font-size: 48px;
   line-height: 1.1666666667;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
 }
 .heading--small {
   font-size: 36px;
@@ -260,6 +265,7 @@ body {
 }
 .services-button {
   padding: 16px 32px;
+  margin: 0 auto;
 }
 
 .partner {
@@ -289,10 +295,22 @@ body {
   margin-bottom: 120px;
   text-align: center;
 }
+.about-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 150px 0;
+}
 .about-section {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 0 130px;
+}
+.about-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.about-section-content {
+  max-width: 570px;
 }
 .about-section-heading {
   margin-bottom: 30px;
@@ -320,6 +338,180 @@ body {
 }
 .about-item-desc {
   line-height: 1.75;
+}
+.about-button {
+  display: inline-block;
+  margin-top: 70px;
+  padding: 16px 32px;
+}
+
+.portfolio {
+  margin-top: 120px;
+  margin-bottom: 118px;
+}
+.portfolio-heading {
+  max-width: 970px;
+  font-size: 42px;
+  line-height: 1.1904761905;
+  letter-spacing: -2px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.portfolio-title {
+  margin-top: 30px;
+}
+.portfolio-item {
+  color: #4F77FF;
+  display: flex;
+  text-decoration: none;
+  gap: 30px;
+  line-height: 1.4545454545;
+  letter-spacing: -1px;
+  font-size: 22px;
+}
+.portfolio-item:first-child {
+  grid-column: 1/span 7;
+}
+.portfolio-item:nth-child(2) {
+  grid-column: 8/-1;
+}
+.portfolio-item:nth-child(3) {
+  grid-column: 1/span 5;
+}
+.portfolio-item:nth-child(4) {
+  grid-column: 6/-1;
+}
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 50px 30px;
+}
+
+.cta {
+  position: relative;
+  padding: 106px 0;
+  background: #F7F5F1;
+}
+.cta-shapes {
+  pointer-events: none;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cta-heading {
+  max-width: 870px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.cta-desc {
+  letter-spacing: -1px;
+  line-height: 1.4545454545;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 58px;
+}
+.cta-button {
+  margin: 0 auto;
+  padding: 16px 32px;
+}
+
+.footer {
+  padding: 100px 0 27px;
+  background-color: #292F3A;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  color: white;
+}
+.footer-column {
+  flex-shrink: 0;
+}
+.footer-column:last-child {
+  max-width: 370px;
+}
+.footer-heading {
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 1.4545454545;
+  letter-spacing: -1px;
+  color: white;
+}
+.footer-item-link {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  color: #E7E5EA;
+  margin-bottom: 10px;
+  letter-spacing: -0.3px;
+}
+.footer .newsletter-desc {
+  line-height: 1.625;
+  color: #E7E5EA;
+  margin-bottom: 25px;
+}
+.footer .newsletter-form {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  width: 100%;
+  gap: 0 6px;
+  margin-bottom: 15px;
+}
+.footer .newsletter-input {
+  all: unset;
+  width: 100%;
+  padding: 11px 18px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #E7E5EA;
+  color: #7B88A8;
+}
+.footer .newsletter-button {
+  font-size: 14px;
+  padding: 12px 40px;
+}
+.footer .newsletter-note {
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: -0.3px;
+  margin-bottom: 100px;
+}
+.footer .copyright {
+  line-height: 1.625;
+  color: #E7E5EA;
+  max-width: 670px;
+}
+.footer-bottom {
+  padding-top: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 304px;
+  border-top: 1px #7B88A8 solid;
+}
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+.footer-social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 100rem;
+  background-color: #4F77FF;
 }
 
 /*# sourceMappingURL=app.css.map */
