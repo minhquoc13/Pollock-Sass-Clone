@@ -12,3 +12,15 @@
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 767.98px) {
+    .partner {
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+    .partner-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;  
+    }
+}

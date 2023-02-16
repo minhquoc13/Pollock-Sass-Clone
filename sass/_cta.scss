@@ -28,3 +28,12 @@
         padding: 16px 32px;
     }
 }
+
+@media screen and (max-width: 767.98px) {
+    .cta {
+        padding: 50px 0;
+    }
+    .cta-desc {
+        margin-bottom: 40px;
+    }
+}

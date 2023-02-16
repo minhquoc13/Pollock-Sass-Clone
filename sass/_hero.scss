@@ -1,14 +1,17 @@
 .hero {
     margin-top: 86px;
-    margin-bottom: 150px;
+    position: relative;
     &-container {
         display: flex;
         align-items: center;
 
     }
+    &-content {
+        max-width: 770px;
+        width: 100%;
+    }
     &-heading {
         max-width: 690px;
-        letter-spacing: -2px;
         margin-bottom: 40px;
         span {
             background: linear-gradient(91.79deg, #857FFF 32.21%, #FFC0EC 83.79%);
@@ -19,8 +22,6 @@
         }
     }
     &-desc {
-        font-size: 18px;
-        line-height: calc(28/18);
         margin-bottom: 72px;
         max-width: 580px;
     }
@@ -51,5 +52,19 @@
         font-size: 15px;
         text-transform: uppercase;
         color: $heading-color;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .hero {
+        margin-top: 40px;
+    }
+    .hero-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .hero-desc {
+        margin-bottom: 40px;
     }
 }

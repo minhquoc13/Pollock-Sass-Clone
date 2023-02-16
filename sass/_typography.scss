@@ -1,31 +1,78 @@
 .heading {
     font-weight: 500;
     color: $heading-color;
-    &--huge {
+    &--biggest {
         font-size: 72px;
         line-height: calc(78/72);
         letter-spacing: -2px;
     }
-    &--big {
+    &--bigger {
         font-size: 64px;
         line-height: calc(72/64);
         letter-spacing: -2px;
     }
-    &--normal {
+    &--big {
         font-size: 48px;
         line-height: calc(56/48);
         letter-spacing: -2px;
     }
-    &--small {
-        font-size: 36px;
-        line-height: calc(46/36);
+    &--large {
+        font-size: 42px;
+        line-height: calc(50/32);
         letter-spacing: -1px;
+    }
+    &--normal {
+        font-size: 36px;
+        line-height: calc(46 / 36);
+    }
+    &--meidum {
+        font-size: 22px;
+        letter-spacing: -1px;
+        line-height: calc(32/22);
+    }
+    &--small {
+        font-size: 18px;
+        letter-spacing: 0.4px;
+        line-height: calc(28/18);
     }
 }
 .text {
     font-family: $text-font;
-    font-weight: 400;
-    color: $primary-text-color;
+    font-size: 18px;
     letter-spacing: -0.3px;
-    font-size: 16px;
+    &--small {
+        font-size: 16px;
+        line-height: calc(26/16);
+    }
+    &--xsmall {
+        font-size: 14px;
+        line-height: calc(24/14);
+        letter-spacing: 0;
+    }
 }
+@media screen and (max-width: 767.98px) {
+    .heading {
+      &--biggest {
+        font-size: 50px;
+      }
+      &--bigger {
+        font-size: 46px;
+      }
+      &--big {
+        font-size: 40px;
+      }
+      &--large {
+        font-size: 36px;
+      }
+      &--normal {
+        font-size: 32px;
+      }
+    }
+    .text {
+      font-size: 16px;
+    }
+    .button {
+      font-size: 13px;
+    }
+  }
+  

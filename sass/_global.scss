@@ -1,8 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: $font;
     font-size: 16px;
     color: $primary-text-color;
     line-height: 1;
+    font-weight: 400;
+    background-color: white;
 }
 a {
     text-decoration: none;
